@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/gabriel/Desktop/C++/templates/super-octo-spoon/build",
+  "command": "/usr/bin/g++    -g   -o src/CMakeFiles/MainApp.dir/template-function.cpp.o -c /home/gabriel/Desktop/C++/templates/super-octo-spoon/src/template-function.cpp",
+  "file": "/home/gabriel/Desktop/C++/templates/super-octo-spoon/src/template-function.cpp"
+}
+]
