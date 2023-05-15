@@ -1,3 +1,16 @@
 # ninja log v5
 0	232	1684185325853288080	src/CMakeFiles/MainApp.dir/template-function.cpp.o	ac0bb7e118a241a9
 232	283	1684185325905287770	src/MainApp	6b3cf2ea85483443
+0	220	1684185572259827691	src/CMakeFiles/MainApp.dir/template-function.cpp.o	ac0bb7e118a241a9
+220	278	1684185572315827358	src/MainApp	6b3cf2ea85483443
+0	238	1684186635343864166	src/CMakeFiles/MainApp.dir/template-function.cpp.o	ac0bb7e118a241a9
+238	300	1684186635403857527	src/MainApp	6b3cf2ea85483443
+1	240	1684186711179906293	src/CMakeFiles/MainApp.dir/template-function.cpp.o	ac0bb7e118a241a9
+240	298	1684186711239900330	src/MainApp	6b3cf2ea85483443
+0	13	1684187075970973685	src/CMakeFiles/MainApp.dir/template-variable.cpp.o	f9307e9de88fa0e2
+0	217	1684187185304414930	src/CMakeFiles/MainApp.dir/template-variable.cpp.o	f9307e9de88fa0e2
+217	268	1684187185356411979	src/MainApp	d648fea4dd9c50e0
+0	270	1684187313661541595	src/CMakeFiles/MainApp.dir/template-variable.cpp.o	f9307e9de88fa0e2
+270	346	1684187313793534919	src/MainApp	d648fea4dd9c50e0
+0	216	1684187497052902398	src/CMakeFiles/MainApp.dir/template-variable.cpp.o	f9307e9de88fa0e2
+216	284	1684187497120899405	src/MainApp	d648fea4dd9c50e0

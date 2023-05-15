@@ -89,8 +89,8 @@ build src/edit_cache: phony src/CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_MainApp: phony || src/CMakeFiles/MainApp.dir
 
-build src/CMakeFiles/MainApp.dir/template-function.cpp.o: CXX_COMPILER__MainApp ../src/template-function.cpp || cmake_object_order_depends_target_MainApp
-  DEP_FILE = src/CMakeFiles/MainApp.dir/template-function.cpp.o.d
+build src/CMakeFiles/MainApp.dir/template-variable.cpp.o: CXX_COMPILER__MainApp ../src/template-variable.cpp || cmake_object_order_depends_target_MainApp
+  DEP_FILE = src/CMakeFiles/MainApp.dir/template-variable.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = src/CMakeFiles/MainApp.dir
   OBJECT_FILE_DIR = src/CMakeFiles/MainApp.dir
@@ -103,7 +103,7 @@ build src/CMakeFiles/MainApp.dir/template-function.cpp.o: CXX_COMPILER__MainApp 
 #############################################
 # Link the executable src/MainApp
 
-build src/MainApp: CXX_EXECUTABLE_LINKER__MainApp src/CMakeFiles/MainApp.dir/template-function.cpp.o
+build src/MainApp: CXX_EXECUTABLE_LINKER__MainApp src/CMakeFiles/MainApp.dir/template-variable.cpp.o
   FLAGS = -g
   OBJECT_DIR = src/CMakeFiles/MainApp.dir
   POST_BUILD = :
