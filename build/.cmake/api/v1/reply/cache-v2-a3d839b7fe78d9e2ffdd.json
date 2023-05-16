@@ -743,7 +743,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1152,6 +1152,30 @@
 			],
 			"type" : "STATIC",
 			"value" : "/home/gabriel/Desktop/C++/templates/super-octo-spoon/src"
+		},
+		{
+			"name" : "lib_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/gabriel/Desktop/C++/templates/super-octo-spoon/build/src/lib"
+		},
+		{
+			"name" : "lib_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/gabriel/Desktop/C++/templates/super-octo-spoon/src/lib"
 		}
 	],
 	"kind" : "cache",

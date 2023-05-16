@@ -87,11 +87,12 @@ build src/edit_cache: phony src/CMakeFiles/edit_cache.util
 #############################################
 # Order-only phony target for MainApp
 
-build cmake_object_order_depends_target_MainApp: phony || src/CMakeFiles/MainApp.dir
+build cmake_object_order_depends_target_MainApp: phony || cmake_object_order_depends_target_lib
 
-build src/CMakeFiles/MainApp.dir/template-variable.cpp.o: CXX_COMPILER__MainApp ../src/template-variable.cpp || cmake_object_order_depends_target_MainApp
-  DEP_FILE = src/CMakeFiles/MainApp.dir/template-variable.cpp.o.d
+build src/CMakeFiles/MainApp.dir/template-class.cpp.o: CXX_COMPILER__MainApp ../src/template-class.cpp || cmake_object_order_depends_target_MainApp
+  DEP_FILE = src/CMakeFiles/MainApp.dir/template-class.cpp.o.d
   FLAGS = -g
+  INCLUDES = -I../src/lib
   OBJECT_DIR = src/CMakeFiles/MainApp.dir
   OBJECT_FILE_DIR = src/CMakeFiles/MainApp.dir
 
@@ -103,8 +104,10 @@ build src/CMakeFiles/MainApp.dir/template-variable.cpp.o: CXX_COMPILER__MainApp 
 #############################################
 # Link the executable src/MainApp
 
-build src/MainApp: CXX_EXECUTABLE_LINKER__MainApp src/CMakeFiles/MainApp.dir/template-variable.cpp.o
+build src/MainApp: CXX_EXECUTABLE_LINKER__MainApp src/CMakeFiles/MainApp.dir/template-class.cpp.o | src/lib/liblib.a || src/lib/liblib.a
   FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/gabriel/Desktop/C++/templates/super-octo-spoon/src/lib  src/lib/liblib.a
+  LINK_PATH = -L/home/gabriel/Desktop/C++/templates/super-octo-spoon/src/lib
   OBJECT_DIR = src/CMakeFiles/MainApp.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -112,9 +115,73 @@ build src/MainApp: CXX_EXECUTABLE_LINKER__MainApp src/CMakeFiles/MainApp.dir/tem
   TARGET_PDB = MainApp.dbg
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/gabriel/Desktop/C++/templates/super-octo-spoon/src/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/lib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/gabriel/Desktop/C++/templates/super-octo-spoon/build/src/lib && /usr/bin/cmake -S/home/gabriel/Desktop/C++/templates/super-octo-spoon -B/home/gabriel/Desktop/C++/templates/super-octo-spoon/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/lib/rebuild_cache: phony src/lib/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/lib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/gabriel/Desktop/C++/templates/super-octo-spoon/build/src/lib && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/lib/edit_cache: phony src/lib/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target lib
+
+
+#############################################
+# Order-only phony target for lib
+
+build cmake_object_order_depends_target_lib: phony || src/lib/CMakeFiles/lib.dir
+
+build src/lib/CMakeFiles/lib.dir/stack.cpp.o: CXX_COMPILER__lib ../src/lib/stack.cpp || cmake_object_order_depends_target_lib
+  DEP_FILE = src/lib/CMakeFiles/lib.dir/stack.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I../src/lib
+  OBJECT_DIR = src/lib/CMakeFiles/lib.dir
+  OBJECT_FILE_DIR = src/lib/CMakeFiles/lib.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target lib
+
+
+#############################################
+# Link the static library src/lib/liblib.a
+
+build src/lib/liblib.a: CXX_STATIC_LIBRARY_LINKER__lib src/lib/CMakeFiles/lib.dir/stack.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = src/lib/CMakeFiles/lib.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/lib/liblib.a
+  TARGET_PDB = lib.a.dbg
+
+# =============================================================================
 # Target aliases.
 
 build MainApp: phony src/MainApp
+
+build lib: phony src/lib/liblib.a
+
+build liblib.a: phony src/lib/liblib.a
 
 # =============================================================================
 # Folder targets.
@@ -131,7 +198,14 @@ build all: phony src/all
 #############################################
 # Folder: /home/gabriel/Desktop/C++/templates/super-octo-spoon/build/src
 
-build src/all: phony src/MainApp
+build src/all: phony src/MainApp src/lib/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/gabriel/Desktop/C++/templates/super-octo-spoon/build/src/lib
+
+build src/lib/all: phony src/lib/liblib.a
 
 # =============================================================================
 # Built-in targets
@@ -145,14 +219,14 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../src/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../src/CMakeLists.txt ../src/lib/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../src/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../src/CMakeLists.txt ../src/lib/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
 
 
 #############################################

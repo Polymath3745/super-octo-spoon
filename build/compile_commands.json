@@ -1,7 +1,13 @@
 [
 {
   "directory": "/home/gabriel/Desktop/C++/templates/super-octo-spoon/build",
-  "command": "/usr/bin/g++    -g   -o src/CMakeFiles/MainApp.dir/template-variable.cpp.o -c /home/gabriel/Desktop/C++/templates/super-octo-spoon/src/template-variable.cpp",
-  "file": "/home/gabriel/Desktop/C++/templates/super-octo-spoon/src/template-variable.cpp"
+  "command": "/usr/bin/g++   -I../src/lib  -g   -o src/CMakeFiles/MainApp.dir/template-class.cpp.o -c /home/gabriel/Desktop/C++/templates/super-octo-spoon/src/template-class.cpp",
+  "file": "/home/gabriel/Desktop/C++/templates/super-octo-spoon/src/template-class.cpp"
+},
+
+{
+  "directory": "/home/gabriel/Desktop/C++/templates/super-octo-spoon/build",
+  "command": "/usr/bin/g++   -I../src/lib  -g   -o src/lib/CMakeFiles/lib.dir/stack.cpp.o -c /home/gabriel/Desktop/C++/templates/super-octo-spoon/src/lib/stack.cpp",
+  "file": "/home/gabriel/Desktop/C++/templates/super-octo-spoon/src/lib/stack.cpp"
 }
 ]

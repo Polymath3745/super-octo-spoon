@@ -10,7 +10,10 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_executable",
+			"link_directories",
+			"target_link_libraries",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -24,7 +27,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 5,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 9,
 				"parent" : 0
 			}
 		]
@@ -38,11 +59,25 @@
 					"fragment" : "-g  "
 				}
 			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/home/gabriel/Desktop/C++/templates/super-octo-spoon/src/lib"
+				}
+			],
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
 				0
 			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "lib::@dc1a1c76835bc3d8b019"
 		}
 	],
 	"id" : "MainApp::@145eef247bfb46b6828c",
@@ -57,6 +92,20 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/gabriel/Desktop/C++/templates/super-octo-spoon/src/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/gabriel/Desktop/C++/templates/super-octo-spoon/src/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "lib/liblib.a",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
@@ -83,7 +132,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/template-variable.cpp",
+			"path" : "src/template-class.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

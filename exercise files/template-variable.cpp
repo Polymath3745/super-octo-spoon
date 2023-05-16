@@ -1,7 +1,7 @@
 #include <iostream>
 
 template <typename T>
-T pi = T(3.1415926535897932385L);
+constexpr T pi = T(3.1415926535897932385L);
 
 template<typename T>
 T area_of_circle(const T &r) {

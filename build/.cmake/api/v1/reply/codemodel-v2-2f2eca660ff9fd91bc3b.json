@@ -19,6 +19,10 @@
 				},
 				{
 					"build" : "src",
+					"childIndexes" : 
+					[
+						2
+					],
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15"
@@ -29,6 +33,20 @@
 					"targetIndexes" : 
 					[
 						0
+					]
+				},
+				{
+					"build" : "src/lib",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "src/lib",
+					"targetIndexes" : 
+					[
+						1
 					]
 				}
 			],
@@ -47,6 +65,10 @@
 					"name" : "Chapter1"
 				},
 				{
+					"childIndexes" : 
+					[
+						2
+					],
 					"directoryIndexes" : 
 					[
 						1
@@ -57,6 +79,18 @@
 					[
 						0
 					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "lib",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						1
+					]
 				}
 			],
 			"targets" : 
@@ -64,9 +98,16 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "MainApp::@145eef247bfb46b6828c",
-					"jsonFile" : "target-MainApp-Debug-49309db6cad29a2c7ebc.json",
+					"jsonFile" : "target-MainApp-Debug-cfa6c765c5c57837f75d.json",
 					"name" : "MainApp",
 					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "lib::@dc1a1c76835bc3d8b019",
+					"jsonFile" : "target-lib-Debug-daf3e7f43b091ddfe49a.json",
+					"name" : "lib",
+					"projectIndex" : 2
 				}
 			]
 		}

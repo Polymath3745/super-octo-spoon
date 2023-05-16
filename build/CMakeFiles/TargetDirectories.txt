@@ -3,3 +3,6 @@
 /home/gabriel/Desktop/C++/templates/super-octo-spoon/build/src/CMakeFiles/rebuild_cache.dir
 /home/gabriel/Desktop/C++/templates/super-octo-spoon/build/src/CMakeFiles/edit_cache.dir
 /home/gabriel/Desktop/C++/templates/super-octo-spoon/build/src/CMakeFiles/MainApp.dir
+/home/gabriel/Desktop/C++/templates/super-octo-spoon/build/src/lib/CMakeFiles/rebuild_cache.dir
+/home/gabriel/Desktop/C++/templates/super-octo-spoon/build/src/lib/CMakeFiles/edit_cache.dir
+/home/gabriel/Desktop/C++/templates/super-octo-spoon/build/src/lib/CMakeFiles/lib.dir
