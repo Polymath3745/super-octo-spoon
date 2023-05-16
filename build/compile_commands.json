@@ -1,8 +1,8 @@
 [
 {
   "directory": "/home/gabriel/Desktop/C++/templates/super-octo-spoon/build",
-  "command": "/usr/bin/g++   -I../src/lib  -g   -o src/CMakeFiles/MainApp.dir/template-class.cpp.o -c /home/gabriel/Desktop/C++/templates/super-octo-spoon/src/template-class.cpp",
-  "file": "/home/gabriel/Desktop/C++/templates/super-octo-spoon/src/template-class.cpp"
+  "command": "/usr/bin/g++   -I../src/lib  -g   -o src/CMakeFiles/MainApp.dir/auto.cpp.o -c /home/gabriel/Desktop/C++/templates/super-octo-spoon/src/auto.cpp",
+  "file": "/home/gabriel/Desktop/C++/templates/super-octo-spoon/src/auto.cpp"
 },
 
 {

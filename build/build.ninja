@@ -89,8 +89,8 @@ build src/edit_cache: phony src/CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_MainApp: phony || cmake_object_order_depends_target_lib
 
-build src/CMakeFiles/MainApp.dir/template-class.cpp.o: CXX_COMPILER__MainApp ../src/template-class.cpp || cmake_object_order_depends_target_MainApp
-  DEP_FILE = src/CMakeFiles/MainApp.dir/template-class.cpp.o.d
+build src/CMakeFiles/MainApp.dir/auto.cpp.o: CXX_COMPILER__MainApp ../src/auto.cpp || cmake_object_order_depends_target_MainApp
+  DEP_FILE = src/CMakeFiles/MainApp.dir/auto.cpp.o.d
   FLAGS = -g
   INCLUDES = -I../src/lib
   OBJECT_DIR = src/CMakeFiles/MainApp.dir
@@ -104,7 +104,7 @@ build src/CMakeFiles/MainApp.dir/template-class.cpp.o: CXX_COMPILER__MainApp ../
 #############################################
 # Link the executable src/MainApp
 
-build src/MainApp: CXX_EXECUTABLE_LINKER__MainApp src/CMakeFiles/MainApp.dir/template-class.cpp.o | src/lib/liblib.a || src/lib/liblib.a
+build src/MainApp: CXX_EXECUTABLE_LINKER__MainApp src/CMakeFiles/MainApp.dir/auto.cpp.o | src/lib/liblib.a || src/lib/liblib.a
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-rpath,/home/gabriel/Desktop/C++/templates/super-octo-spoon/src/lib  src/lib/liblib.a
   LINK_PATH = -L/home/gabriel/Desktop/C++/templates/super-octo-spoon/src/lib

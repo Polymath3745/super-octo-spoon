@@ -14,7 +14,7 @@ link_directories(${LIB})
 add_subdirectory(${LIB})
 
 # this will change based on cpp you want to execute
-add_executable(${PROJECT_NAME} template-class.cpp)
+add_executable(${PROJECT_NAME} auto.cpp)
 
 # links the files together
 target_link_libraries(${PROJECT_NAME} ${LIB})
